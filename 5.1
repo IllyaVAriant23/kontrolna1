@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double x, result;
+
+    printf("Введіть значення x: ");
+    scanf("%lf", &x);
+
+    if (x >= -1 && x <= 2) {
+        result = x + 2;
+    } else {
+        result = x - 2;
+    }
+
+    printf("f(x) = %.2lf\n", result);
+
+    return 0;
+}
