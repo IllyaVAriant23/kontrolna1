@@ -1,18 +1,21 @@
+
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    double x, result;
+    double x;
+    double il;
 
     printf("Введіть значення x: ");
     scanf("%lf", &x);
 
-    if (x >= -1 && x <= 2) {
-        result = x + 2;
+    if (x <= 2) {
+        il = pow(x, 2) + 5 * x - 6;
     } else {
-        result = x - 2;
+        il = fabs(x + cos(x));
     }
 
-    printf("f(x) = %.2lf\n", result);
+    printf("Значення функції f(x): %lf\n", il);
 
     return 0;
 }
