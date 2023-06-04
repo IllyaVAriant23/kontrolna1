@@ -1,18 +1,25 @@
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    double x, y, а;
+    double x, y, x0, x1, y0, y1;
+    double kk;
 
     printf("Введіть значення x: ");
     scanf("%lf", &x);
-
     printf("Введіть значення y: ");
     scanf("%lf", &y);
+    printf("Введіть значення x0: ");
+    scanf("%lf", &x0);
+    printf("Введіть значення x1: ");
+    scanf("%lf", &x1);
+    printf("Введіть значення y0: ");
+    scanf("%lf", &y0);
+    printf("Введіть значення y1: ");
+    scanf("%lf", &y1);
 
-    а = pow(x, 2) - pow(y, 2);
+    kk = (x - x0) / (x1 - x0) - (y - y0) / (y1 - y0);
 
-    printf("Результат: %.2lf\n", а);
+    printf("Результат: %lf\n", kk);
 
     return 0;
 }
